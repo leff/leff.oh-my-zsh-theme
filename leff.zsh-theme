@@ -30,7 +30,7 @@ precmd() { print -rP "
 %{$FG[166]%}@\
 %{$FG[245]%}$(box_name) \
 %{$BG[240]$FG[235]%}⮀\
-%{$BG[240]$FG[250]%} env: `basename $VIRTUAL_ENV` \
+%{$BG[240]$FG[250]%} env: `basename $VIRTUAL_ENV 2>/dev/null` \
 %{$BG[022]$FG[240]%}⮀\
 %{$BG[022]$FG[041]%} ${current_dir} \
 %{$reset_color%}%{$FG[022]%}⮀\
